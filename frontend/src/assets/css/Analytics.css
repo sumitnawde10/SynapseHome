@@ -1,0 +1,15 @@
+/* src/assets/css/Analytics.css */
+.analytics-grid {
+    display: grid;
+    /* This forces one column, making each chart take the full width */
+    grid-template-columns: 1fr; 
+    gap: 40px;
+}
+
+.chart-container {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+

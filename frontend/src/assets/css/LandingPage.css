@@ -1,0 +1,190 @@
+/* src/assets/css/LandingPage.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* General Section Styling */
+.section {
+  padding: 100px 10%;
+  min-height: 70vh;
+  border-bottom: 1px solid #222;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.section-subtitle {
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo:hover {
+  color: #00aaff;
+  cursor: default;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 90vh;
+  align-items: flex-start;
+  text-align: left;
+  background-image: url('../images/hero-bg.jpg');
+  /* THIS IS THE ONLY CHANGE: These two lines fix the alignment */
+  padding-top: 0;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+  max-width: 650px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 550px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0077cc;
+}
+
+/* How It Works Section */
+.how-it-works-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.step-card {
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 350px;
+  border: 1px solid #333;
+}
+
+.step-card h3 {
+  color: #00aaff;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* Contact Section */
+.contact-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.contact-details a {
+  color: #00aaff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Specific Backgrounds for other sections */
+#about {
+    background-image: url('../images/about-bg.jpg');
+}
+#how-it-works {
+    background-image: url('../images/how-it-works-bg.jpg');
+}
+#contact {
+    background-image: url('../images/contact-bg.jpg');
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 40px 10%;
+  background-color: #1a1a1a;
+  border-top: 1px solid #222;
+}

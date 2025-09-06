@@ -1,0 +1,107 @@
+/* src/assets/css/AppLayout.css */
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #121212; 
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1a1a1a; 
+  padding: 20px;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column; /* This is key for the layout */
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;
+  transition: color 0.3s ease; 
+}
+
+.sidebar h2:hover {
+    color: #00aaff;
+    cursor: default;
+}
+
+/* This div will now grow to push the button down */
+.sidebar-nav-container {
+  flex-grow: 1; 
+}
+
+.sidebar-nav a {
+  display: block; /* Ensures links take up full width for better clicking */
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav a:hover {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.sidebar-nav a.active {
+  background-color: #0077cc;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* UPDATED: Styles for the logout button */
+.logout-button {
+  background-color: transparent; /* Make it less prominent initially */
+  color: #a0a0a0; /* Dim the text color */
+  border: 1px solid #444; /* Add a subtle border */
+  width: auto; /* Let the padding define the width */
+  padding: 10px 20px; /* Make it smaller */
+  font-size: 1rem; /* Smaller font size */
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px; 
+  text-align: center; /* Center the text */
+  align-self: center; /* Center the button itself */
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Red color on hover */
+  color: #ffffff;
+  border-color: #d32f2f; /* Match border color on hover */
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.content-area h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+
+/* Add this to the end of src/assets/css/AppLayout.css */
+
+.welcome-message {
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}

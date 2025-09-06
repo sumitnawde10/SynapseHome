@@ -1,0 +1,62 @@
+/* src/assets/css/Logs.css */
+.logs-container {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid #333;
+  overflow: hidden; /* To keep border radius on children */
+}
+
+.logs-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #2a2a2a;
+  font-weight: bold;
+  color: #a0a0a0;
+}
+
+.log-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-top: 1px solid #333;
+  transition: background-color 0.3s ease;
+}
+
+.log-item:hover {
+  background-color: #2a2a2a;
+}
+
+.header-ts, .log-item .timestamp {
+  width: 180px;
+  color: #a0a0a0;
+}
+
+.header-msg, .log-item .message {
+  flex-grow: 1;
+}
+
+.header-type, .log-item .type {
+  width: 100px;
+  text-align: center;
+}
+
+.log-item .type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.log-item .type-decision {
+  background-color: rgba(0, 170, 255, 0.2);
+  color: #00aaff;
+}
+.log-item .type-action {
+  background-color: rgba(0, 255, 170, 0.2);
+  color: #00ffa0;
+}
+.log-item .type-alert {
+  background-color: rgba(255, 200, 0, 0.2);
+  color: #ffc800;
+}
