@@ -16,5 +16,5 @@ yarn-error.log*
 # VS Code
 .vscode/
 
-# Jupyter Notebook
-.ipynb_checkpoints/
+# # Jupyter Notebook
+# .ipynb_checkpoints/
