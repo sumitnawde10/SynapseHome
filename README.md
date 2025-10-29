@@ -85,11 +85,10 @@ The project uses the "Individual household electric power consumption" dataset. 
     Go to: [https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption)
     Download the file named `household_power_consumption.zip`.
 
-2.  **Extract the data:**
-    Unzip `household_power_consumption.zip`. You should find a file named `household_power_consumption.txt` inside.
+2.  **2nd datasets is already in the data folder**
 
 3.  **Place the file:**
-    Create a directory named `data` inside your `backend` folder:
+    Go to a directory named `data` inside your `backend` folder:
     `synapse-home/backend/data/`
     Place `household_power_consumption.txt` into this `data` folder.
     The full path should look like: `synapse-home/backend/data/household_power_consumption.txt`
@@ -98,7 +97,7 @@ The project uses the "Individual household electric power consumption" dataset. 
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone <https://github.com/sumitnawde10/SynapseHome>
     cd synapse-home
     ```
 
@@ -163,6 +162,7 @@ The project uses the "Individual household electric power consumption" dataset. 
 
 4.  **Start the React development server:**
     ```bash
+    cd frontend
     npm start
     # OR
     yarn start
