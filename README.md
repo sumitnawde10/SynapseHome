@@ -206,4 +206,4 @@ Once both the backend and frontend servers are running:
 
 ## 7. Contact
 
-For any questions or suggestions, please contact [].
+For any questions or suggestions, please contact https://github.com/sumitnawde10.
