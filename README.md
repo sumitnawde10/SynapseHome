@@ -97,7 +97,7 @@ The project uses the "Individual household electric power consumption" dataset. 
 
 1.  **Clone the repository:**
     ```bash
-    git clone <https://github.com/sumitnawde10/SynapseHome>
+    git clone https://github.com/sumitnawde10/SynapseHome
     cd synapse-home
     ```
 
