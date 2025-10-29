@@ -1,15 +1,131 @@
 /* src/assets/css/Analytics.css */
+
+.analytics-page {
+    padding: 20px;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Create a consistent inner wrapper so all content aligns inside */
+.analytics-content {
+    width: 100%;
+    max-width: 1100px; /* Keep all boxes aligned within this width */
+}
+
+/* Heading */
+.analytics-page h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid rgba(0, 120, 255, 0.6);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Simulation Summary Box */
+.simulation-summary {
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    margin: 0 auto 30px auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.simulation-summary h3 {
+    color: #f9d71c;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.simulation-summary p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.simulation-summary strong {
+    color: #ffffff;
+}
+
+/* Chart Grid */
 .analytics-grid {
     display: grid;
-    /* This forces one column, making each chart take the full width */
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
 }
 
 .chart-container {
-    background-color: #1a1a1a;
+    background-color: #2a2a2a;
     padding: 30px;
     border-radius: 10px;
     border: 1px solid #333;
+    height: 400px;
+    position: relative;
+    box-sizing: border-box;
 }
 
+.chart-container h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* Error Box */
+.error-message {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .analytics-page {
+        padding: 15px;
+    }
+    .analytics-content,
+    .simulation-summary,
+    .analytics-grid,
+    .error-message {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .analytics-page {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .analytics-page h2 {
+        font-size: 1.6em;
+    }
+
+    .simulation-summary,
+    .analytics-grid,
+    .error-message {
+        padding: 15px;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .chart-container {
+        height: 300px;
+        padding: 20px;
+    }
+}

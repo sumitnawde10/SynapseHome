@@ -1,0 +1,10 @@
+{
+    "solar_capacity_kw": 5.0,
+    "wind_capacity_kw": 2.0,
+    "battery_capacity_kwh": 10.0,
+    "battery_current_charge_kwh": 5.0,
+    "battery_min_reserve_percent": 20,
+    "allow_grid_charge": true,
+    "operating_mode": "Self-Sufficiency",
+    "min_battery_reserve_user_percent": 30
+}

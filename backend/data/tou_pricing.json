@@ -1,0 +1,16 @@
+{
+  "buying_prices": [
+    { "name": "Off-Peak", "rate_per_kwh": 0.10, "start_hour": 0, "end_hour": 6 },
+    { "name": "Mid-Peak", "rate_per_kwh": 0.15, "start_hour": 6, "end_hour": 12 },
+    { "name": "On-Peak",  "rate_per_kwh": 0.25, "start_hour": 12, "end_hour": 18 },
+    { "name": "Mid-Peak", "rate_per_kwh": 0.15, "start_hour": 18, "end_hour": 22 },
+    { "name": "Off-Peak", "rate_per_kwh": 0.10, "start_hour": 22, "end_hour": 24 }
+  ],
+  "selling_prices": [
+    { "name": "Off-Peak", "rate_per_kwh": 0.05, "start_hour": 0, "end_hour": 6 },
+    { "name": "Mid-Peak", "rate_per_kwh": 0.08, "start_hour": 6, "end_hour": 12 },
+    { "name": "On-Peak",  "rate_per_kwh": 0.12, "start_hour": 12, "end_hour": 18 },
+    { "name": "Mid-Peak", "rate_per_kwh": 0.08, "start_hour": 18, "end_hour": 22 },
+    { "name": "Off-Peak", "rate_per_kwh": 0.05, "start_hour": 22, "end_hour": 24 }
+  ]
+}
